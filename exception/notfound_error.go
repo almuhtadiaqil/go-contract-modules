@@ -1,4 +1,4 @@
-package exception
+package go_contract_modules
 
 type NotFoundError struct {
 	Error string

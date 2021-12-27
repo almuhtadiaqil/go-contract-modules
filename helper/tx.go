@@ -1,4 +1,4 @@
-package helper
+package go_contract_modules
 
 import "github.com/jinzhu/gorm"
 
