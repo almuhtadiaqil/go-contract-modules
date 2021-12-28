@@ -1,6 +1,6 @@
 package go_contract_modules
 
-import "github.com/jinzhu/gorm"
+import "gorm.io/gorm"
 
 func CommitOrRollback(tx *gorm.DB) {
 	err := recover()

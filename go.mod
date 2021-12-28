@@ -22,4 +22,9 @@ require (
 	gopkg.in/yaml.v2 v2.2.8 // indirect
 )
 
-require github.com/jinzhu/inflection v1.0.0 // indirect
+require (
+	github.com/jinzhu/inflection v1.0.0 // indirect
+	gorm.io/gorm v1.22.4
+)
+
+require github.com/jinzhu/now v1.1.3 // indirect
