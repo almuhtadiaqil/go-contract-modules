@@ -8,6 +8,6 @@ type RolePermission struct {
 	gorm.Model
 	RoleId       uint       `gorm:"primaryKey"`
 	PermissionId uint       `gorm:"primaryKey"`
-	Role         Role       `gorm:"foreignKey:RoleId"`
-	Permission   Permission `gorm:"foreignKey:PermissionId"`
+	Role         Role       `gorm:"embedded;foreignKey:RoleId"`
+	Permission   Permission `gorm:"embedded;foreignKey:PermissionId"`
 }
