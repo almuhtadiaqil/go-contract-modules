@@ -6,8 +6,8 @@ import (
 
 type RolePermission struct {
 	gorm.Model
-	RoleId       uint
-	PermissionId uint
+	RoleId       uint       `gorm:"primaryKey"`
+	PermissionId uint       `gorm:"primaryKey"`
 	Role         Role       `gorm:"foreignKey:RoleId"`
 	Permission   Permission `gorm:"foreignKey:PermissionId"`
 }
